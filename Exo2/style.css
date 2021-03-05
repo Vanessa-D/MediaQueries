@@ -1,0 +1,27 @@
+.container{
+    border: 1px solid lightsteelblue;
+    display: flex;
+    justify-content: space-around;
+}
+p{
+    border: 1px solid burlywood;
+    background-color: lightskyblue;
+    width: 200px;
+    height: 70px;
+}
+/*
+Nouvelles règles quand la largeur de l'écran fait au plus 768px puis 375px
+*/
+@media screen and (max-width: 768px){
+    .container{
+        flex-wrap: wrap;
+
+    }
+}
+@media screen and (max-width: 500px){
+    .container{
+        flex-direction: column;
+        /*justify-content: center;*/
+    }
+}
+
